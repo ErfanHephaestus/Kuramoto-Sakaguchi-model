@@ -72,6 +72,7 @@ int main()
 
 		orderparameter << t << "        " << r << endl;
 	}
+	orderparameter.close();
 	//freeing allocated memory
 	for (ushort i = 0; i < N; ++i) {
 		delete[] adjacencyMatrix[i];
@@ -120,6 +121,7 @@ void erdosRenyi(ushort** const adjmat)
 		}
 		adjacency << endl;
 	}
+	adjacency.close();
 }
 double generateGaussianNoise(double mu, double sigma)
 {
